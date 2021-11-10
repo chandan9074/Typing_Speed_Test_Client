@@ -8,5 +8,6 @@ body {
   min-height: 100vh;
   justify-content: center;
   align-items: center;
-  background-image: linear-gradient(60deg, #96deda 0%, #50c9c3 100%);
+  /* background-image: linear-gradient(60deg, #96deda 0%, #50c9c3 100%); */
+  background-image: linear-gradient(60deg, #f8f9fa 0%, #d5e1e6 100%);
 }

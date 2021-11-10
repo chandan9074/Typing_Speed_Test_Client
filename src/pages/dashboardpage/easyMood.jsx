@@ -36,13 +36,14 @@ const EasyMood = (props) => {
                 }
             }
             
-            axios.get(`http://127.0.0.1:8000/main_app_api/records/${user}/`, config).then(response=>{
+            axios.get(`https://type-speed-test.herokuapp.com/main_app_api/records/${user}/`, config).then(response=>{
                 var result = response.data
                 var record = result[0].easy
                     
-                axios.get(`http://127.0.0.1:8000/main_app_api/quotes/${record}/`, config).then(async response=>{
+                axios.get(`https://type-speed-test.herokuapp.com/main_app_api/quotes/${record}/`, config).then(async response=>{
                     setQoute(response.data.quote)
                     setRecords(result[0].easy)
+                    console.log("data", response.data.qoute)
 
                 })
             })
@@ -79,7 +80,7 @@ const EasyMood = (props) => {
         if(qtDis){
             const quote = qoute
             qtDis.innerHTML = ""
-            quote.split('').forEach(character => {
+            quote?.split('').forEach(character => {
                 const characterSpan = document.createElement('span')
                 characterSpan.innerText = character
                 qtDis.appendChild(characterSpan)
@@ -107,7 +108,7 @@ const EasyMood = (props) => {
                 "easy":records+1
             }
 
-            axios.put(`http://127.0.0.1:8000/main_app_api/records/${user}/`, url_data, config).then(response=>{
+            axios.put(`https://type-speed-test.herokuapp.com/main_app_api/records/${user}/`, url_data, config).then(response=>{
                 setRetry(false)
                 setDone(true)
             })
@@ -176,7 +177,7 @@ const EasyMood = (props) => {
                     <div className="left_q_dis">
                         <div className="quote_head">Make Your Speed Fast</div>
                         <div className="quote_style" id="dis_qt"></div>
-                        <textarea className="qt_inpt_style" name="" className="" id="inpt_qt"  readOnly/>
+                        <textarea className="qt_inpt_style" name="" id="inpt_qt"  readOnly/>
                     </div>
                 </div>
                 <div className="right_record_style">

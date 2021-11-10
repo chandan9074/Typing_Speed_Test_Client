@@ -25,7 +25,7 @@ const Login = () => {
             var config={
                 headers:{'Content-Type':'application/json'}
             }
-            axios.post('http://127.0.0.1:8000/accounts_api/login/', loginData, config).then(async response=> {
+            axios.post('https://type-speed-test.herokuapp.com/accounts_api/login/', loginData, config).then(async response=> {
                 if(response.status===200){
                     await setToken(response.data)
                     setIslogin(true)

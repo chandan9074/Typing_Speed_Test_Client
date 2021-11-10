@@ -12,7 +12,7 @@
 }
 
 .navber {
-  box-shadow: rgb(50, 87, 90) 0vh 0vh 1vh;
+  box-shadow: rgb(13, 13, 14) 0vh 0vh 1vh;
   font-size: 2.8vh;
   padding: 2vh 40vh;
   border-radius: 0 0 5vh 5vh;
@@ -42,11 +42,11 @@
   align-items: center;
   width: 100%;
   min-height: 100vh;
-  background-image: linear-gradient(60deg, #96deda 0%, #50c9c3 100%);
+  /* background-image: linear-gradient(60deg, #96deda 0%, #50c9c3 100%); */
 }
 
 .left_q_dis {
-  box-shadow: rgb(50, 87, 90) 0vh 0vh 1vh;
+  box-shadow: rgb(13, 13, 14) 0vh 0vh 1vh;
   padding: 3.5vh;
   display: flex;
   flex-direction: column;
@@ -78,7 +78,7 @@
 .quote_style {
   margin-bottom: 2vh;
   padding: 2vh;
-  box-shadow: rgb(50, 87, 90) 0vh 0vh 1vh;
+  box-shadow: rgb(13, 13, 14) 0vh 0vh 1vh;
   border-radius: 0.5vh;
   width: 70vh;
   font-size: 2.4vh;
@@ -94,16 +94,16 @@
   outline: none;
   border-radius: 0.5vh;
   border: none;
-  background-color: rgb(206, 239, 241);
+  background-color: rgb(253, 253, 253);
   font-size: 2.4vh;
-  box-shadow: rgb(50, 87, 90) 0vh 0vh 1vh;
+  box-shadow: rgb(13, 13, 14) 0vh 0vh 1vh;
   font-family: "Roboto Condensed", sans-serif;
   font-weight: bolder;
 }
 
 .right_record_style {
   margin-left: 20vh;
-  box-shadow: rgb(50, 87, 90) 0vh 0vh 1vh;
+  box-shadow: rgb(13, 13, 14) 0vh 0vh 1vh;
 }
 
 .box_part_style {
@@ -152,7 +152,7 @@
 }
 
 .status_box {
-  box-shadow: rgb(50, 87, 90) 0vh 0vh 1vh;
+  box-shadow: rgb(13, 13, 14) 0vh 0vh 1vh;
   padding: 0.8vh 3vh;
   border-radius: 1vh;
   margin-top: 1vh;
@@ -198,7 +198,7 @@
   visibility: hidden;
   margin-top: 1.4vh;
   margin-left: 0.5vh;
-  box-shadow: rgb(50, 87, 90) 0vh 0vh 1vh;
+  box-shadow: rgb(13, 13, 14) 0vh 0vh 1vh;
   border-radius: 0.5vh;
 }
 
@@ -211,7 +211,7 @@
   border: none;
   border-radius: 0vh 0vh 1vh 1vh;
   background-color: rgb(46, 95, 117);
-  box-shadow: rgb(50, 87, 90) 0vh 0vh 0.5vh;
+  box-shadow: rgb(13, 13, 14) 0vh 0vh 0.5vh;
   margin-top: 0.1vh;
 }
 
@@ -230,7 +230,7 @@
   height: 12vh;
   outline: none;
   background-color: rgb(46, 95, 117);
-  box-shadow: rgb(50, 87, 90) 0vh 0vh 0.5vh;
+  box-shadow: rgb(13, 13, 14) 0vh 0vh 0.5vh;
   border: none;
   border-radius: 1vh 1vh 0vh 0vh;
 }

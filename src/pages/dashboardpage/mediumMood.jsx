@@ -36,11 +36,11 @@ const MediumMood = (props) => {
                 }
             }
             
-            axios.get(`http://127.0.0.1:8000/main_app_api/records/${user}/`, config).then(response=>{
+            axios.get(`https://type-speed-test.herokuapp.com/main_app_api/records/${user}/`, config).then(response=>{
                 var result = response.data
 
                 var record = result[0].medium
-                axios.get(`http://127.0.0.1:8000/main_app_api/quotes/${record}/`, config).then(async response=>{
+                axios.get(`https://type-speed-test.herokuapp.com/main_app_api/quotes/${record}/`, config).then(async response=>{
                     setQoute(response.data.quote)
                     setRecords(result[0].medium)
                 })
@@ -80,7 +80,7 @@ const MediumMood = (props) => {
         if(qtDis){
             const quote = qoute
             qtDis.innerHTML = ""
-            quote.split('').forEach(character => {
+            quote?.split('').forEach(character => {
                 const characterSpan = document.createElement('span')
                 characterSpan.innerText = character
                 qtDis.appendChild(characterSpan)
@@ -109,7 +109,7 @@ const MediumMood = (props) => {
             "medium":records+1
         }
 
-        axios.put(`http://127.0.0.1:8000/main_app_api/records/${user}/`,url_data, config).then(response=>{
+        axios.put(`https://type-speed-test.herokuapp.com/main_app_api/records/${user}/`,url_data, config).then(response=>{
             setRetry(false)
             setDone(true)
         })

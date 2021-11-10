@@ -30,7 +30,7 @@ const Signup = () => {
                 var config={
                     headers:{'Content-Type':'application/json'}
                 }
-                axios.post('http://127.0.0.1:8000/accounts_api/signup/', signupData, config).then(response=> {
+                axios.post('https://type-speed-test.herokuapp.com/accounts_api/signup/', signupData, config).then(response=> {
                     setIsSignup(true)
                     setIncorrect(false)
 
@@ -41,7 +41,7 @@ const Signup = () => {
                         userProfile : response.data.uID
                     }
 
-                    axios.post('http://127.0.0.1:8000/main_app_api/create_record/', recordData, config).then(response=>{}) 
+                    axios.post('https://type-speed-test.herokuapp.com/main_app_api/create_record/', recordData, config).then(response=>{}) 
 
                 })
                 .catch(function(error){
